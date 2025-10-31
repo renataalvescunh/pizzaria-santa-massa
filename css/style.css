@@ -538,7 +538,7 @@
 
         /* Social Section */
         .social {
-            background-image: url(/assets/pizza-mockup.jpg);
+            background-image: url('../assets/pizza-mockup.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
