@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Santa Massa - O Sabor de São Paulo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <canvas id="webgl-canvas"></canvas> 
+    <div class="content-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Pizzaria Santa Massa" loading="lazy"> 
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="#home"><i class="ph-fill ph-house"></i>
+Home</a> </li>
+                    <li><a href="#sobre"><i class="ph-fill ph-user"></i>
+Sobre</a></li>
+                    <li><a href="#cardapio"><i class="ph-fill ph-notepad"></i>
+Cardápio</a></li>
+                    <li><a href="#localizacao"><i class="ph-fill ph-map-pin"></i>
+Localização</a></li>
+                    <li><a href="#contato"><i class="ph-fill ph-phone"></i>
+Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Hero Section -->
+        <section id ="home" class="hero"> 
+            <div class="hero-content">
+                <h2>A melhor pizza de São paulo a cada mordida.</h2>
+                    <p> Usamos apenas os melhores ingredientes, do molho de tomate fresco à massa de fermentação lenta. Prontos para o primeiro pedaço? </p>
+              <a href="#cardapio" class="cta-button"><i class="ph-fill ph-fork-knife"></i>
+Peça conosco</a>
+            </div>
+            <div class="hero-image">
+                <div class="pizza-slice-container">
+                    <img src="assets/pizza-slice.png" alt="Fatias de Pizza" class="pizza-slice">
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="sobre" class="about">
+            <div class="about-image">
+                <img src="assets/pizza.png" alt="Pizza Completa" class="pizza">
+            </div>
+            <div class="about-content">
+                <h2>SOBRE</h2>
+               <p> A Santa Massa nasceu de um sonho simples: levar a autêntica pizza italiana para o coração de São Paulo. Mas nossa
+            história vai além. Somos movidos pela paixão em servir e pela obsessão pela qualidade. </p>
+            <p> Para nós, pizza é sinônimo de festa, reunião e memória afetiva. Fundamos a Pizzaria Santa Massa para ser o ponto de
+            encontro de quem ama boa comida e momentos inesquecíveis. </p>
+          <p> Nossa massa é de fermentação natural, resultando em uma borda aerada e crocante. O molho é feito com tomates frescos,
+            colhidos no ponto ideal. Acreditamos que a verdadeira diferença está nos detalhes: desde a seleção de ingredientes
+            premium até o nosso forno, que garante o aroma e o sabor inconfundíveis. 
+        </p>
+        <p> Nossa equipe trabalha todos os dias para que, ao abrir a caixa, você sinta mais do que um aroma, mas sim uma promessa
+        cumprida: a da melhor pizza da cidade, sempre quentinha e com um sorriso. Sua satisfação é o nosso molho secreto! </p>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="cardapio" class="menu">
+            <div class="menu-header">
+                <h2>CARDÁPIO<br><span>DIGITAL</span></h2>
+                <p> A missão agora é sua: escolher entre clássicos que nunca falham e sabores exclusivos que vão te surpreender.</p>
+            </div>
+
+        <div class="menu-grid">
+        
+            <div class="menu-item">
+                <img src="assets/pizza3.png" alt="Pizza Margherita" loading="lazy">
+                <h3>MARGHERITA CLÁSSICA</h3>
+                <p>A simplicidade da realeza: Molho San Marzano, Muçarela, Manjericão fresco e azeite extra virgem. O sabor
+                    autêntico de Nápoles.</p>
+                <div class="price">R$ 45,00</div>
+                <button class="add-button">Adicionar</button>
+            </div>
+        
+            <div class="menu-item">
+                <img src="assets/pizza2.png" alt="Pizza Calabresa" loading="lazy">
+                <h3>PICANHA DA CALABRESA</h3>
+                <p>Linguiça calabresa artesanal, pimenta suave, e fatias finas de cebola roxa. Um clássico inconfundível com
+                    toque especial da casa.</p>
+                <div class="price">R$ 31,99</div>
+                <button class="add-button">Adicionar</button>
+            </div>
+        
+            <div class="menu-item">
+                <img src="assets/pizza1.png" alt="Pizza Frango com Catupiry" loading="lazy">
+                <h3>CREME DE FRANGO</h3>
+                <p>Frango desfiado com tempero da casa, mergulhado na cremosidade inigualável do Catupiry original. Conforto e
+                    sabor em uma fatia.</p>
+                <div class="price">R$ 35,00</div>
+                <button class="add-button">Adicionar</button>
+            </div>
+        
+            <div class="menu-item">
+                <img src="assets/pizza4.png" alt="Pizza Quatro Queijos Trufado" loading="lazy">
+                <h3>QUATTRO FORMAGGI </h3>
+                <p>Seleção de 4 queijos harmonizados com um toque sutil e elegante de azeite de trufa negra. Intenso, aromático
+                    e sofisticado.</p>
+                <div class="price">R$ 58,00</div>
+                <button class="add-button">Adicionar</button>
+            </div>
+        
+            <div class="menu-item">
+                <img src="assets/pizza5.png" alt="Pizza Carne Seca" loading="lazy">
+                <h3>SECA DO SERTÃO</h3>
+                <p>Generosa carne seca desfiada e dessalgada, coberta com requeijão cremoso e pimenta biquinho. Um sabor
+                    brasileiro premium inesquecível.</p>
+                <div class="price">R$ 55,00</div>
+                <button class="add-button">Adicionar</button>
+            </div>
+        
+            <div class="menu-item">
+                <img src="assets/pizza6.png" alt="Pizza de Cogumelos Frescos" loading="lazy">
+                <h3>TERRA & FUNGHI</h3>
+                <p>Mix de cogumelos frescos (Shitake e Shimeji), Muçarela de Búfala e alho-poró crocante. Uma opção leve e rica
+                    em umami.</p>
+                <div class="price">R$ 51,00</div>
+                <button class="add-button">Adicionar</button>
+            </div>
+        
+        </div>
+        <div class="load-more">
+            <button>Carregar mais sabores</button>
+        </div>
+        </section>
+        <!-- Location Section -->
+    <section id="localizacao" class="location">
+        <div class="location-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7028124508496!2d-46.6575973855562!3d-23.57885746765036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59942a77f981%3A0xf6350f5835928f6d!2sParque%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1669830000000!5m2!1spt-BR!2sbr"
+                width="99.5%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p><strong>Nosso Endereço:</strong> Rua da Pizza, nº 123, Bairro Saboroso, São Paulo - SP <br>
+          <strong>Horário de funcionamento:</strong> De segunda a sexta-feira, das 9h às 19h</p>
+        </div>
+    
+        <div class="location-info">
+            <h2>LOCALIZAÇÃO</h2>
+            <p>Peça no conforto de casa ou retire no balcão. Estamos prontos para te servir!</p>
+    
+            <div class="delivery-options">
+                <div class="delivery-option" data-service="IFOOD"> <i class="ph-fill ph-fork-knife"></i>
+ IFOOD</div>
+                <div class="delivery-option" data-service="WPP"> <i class="ph-fill ph-whatsapp-logo"></i>
+ WHATSAPP</div>
+            </div>
+                        <p> Ou ligue para nós pelo número: (11) 1234-5678! </p>
+                        
+
+        </div>
+    </section>
+    
+    <section  id="contato" class="social">
+   <h3>NOS ACOMPANHE NAS REDES SOCIAIS</h3>
+        <div class="social-links">
+            <a href="https://instagram.com/suapizzaria" target="_blank" class="social-button"> <i class="ph-fill ph-instagram-logo"></i>
+ INSTAGRAM</a>
+            <a href="https://facebook.com/suapizzaria" target="_blank" class="social-button"> <i class="ph-fill ph-facebook-logo"></i>
+FACEBOOK</a>
+        </div>
+    </section>
+    
+<footer>
+    <div class="footer-content">
+
+        <div class="footer-column footer-identity">
+            <h3>PIZZARIA SANTA MASSA</h3>
+            <p class="slogan">Onde a tradição encontra o sabor perfeito.</p>
+            <p> Contato | <strong>(11) 1234-5678</strong></p>
+            <p> Endereço | Rua da Pizza, nº 123, São Paulo - SP</p>
+        </div>
+
+        <div class="footer-column footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#cardapio">Cardápio Digital</a></li>
+                <li><a href="#localizacao">Entrega / Retirada</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-legal">
+            <h3>Legal & Social</h3>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a>
+            </div>
+
+            <p class="legal-info">CNPJ: 00.000.000/0001-00</p>
+            <p class="copyright">&copy; 2025 PIZZARIA SANTA MASSA | Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
